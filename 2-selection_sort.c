@@ -1,17 +1,5 @@
 #include "sort.h"
-void swap_(int *xp, int *yp);
-/**
- * swap_ - Prints a list of integers
- * @xp: ptr of array
- * @yp: size of array
- */
 
-void swap_(int *xp, int *yp)
-{
-	int temp = *xp;
-	*xp = *yp;
-	*yp = temp;
-}
 /**
  * selection_sort - Write a function that sorts an array of integers
  * @array: ptr of array
@@ -20,7 +8,7 @@ void swap_(int *xp, int *yp)
 
 void selection_sort(int *array, size_t size)
 {
-	int min_num;
+	int min_num, aux;
 	size_t j, i;
 
 	for (i = 0; i < size - 1; i++)
@@ -33,7 +21,9 @@ void selection_sort(int *array, size_t size)
 		}
 		if (array[min_num] < array[i])
 		{
-			swap_(&array[min_num], &array[i]);
+			aux = array[min_num];
+			array[min_num] = array[i];
+			array[i] = aux;
 			print_array(array, size);
 		}
 	}
