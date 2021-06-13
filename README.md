@@ -1,4 +1,4 @@
-<p align="center"><img src='https://embed-ssl.wistia.com/deliveries/70d6f4e10e2badb5ef394f00c17ad2bc1c14f6e7.jpg' alt='Banner' width=10%></p>
+<p align="center"><img src='https://embed-ssl.wistia.com/deliveries/70d6f4e10e2badb5ef394f00c17ad2bc1c14f6e7.jpg' alt='Banner' width=40%></p>
 
 # 0x1B. C - Sorting algorithms & Big O
 
